@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email verification</title>
+    <style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+.container{
+    width: 100%;
+    max-width: 600%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+table{
+    width: 100px;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 2px dashed #333333;
+    border-radius: 6px;
+}
+.otp{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.note{
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+}
+.content{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2> RESET PASSWORD VERIFICATION OTP</h2>
+        </div>
+        <h2>hi #{name}</h2>
+        <div class="content">
+            <p>
+                your one time password (OPT) for reseting password: </p>
+            <table style="text-align: center;">
+                <tr>
+                    <td style="border-radius: 6px 6px 0 0;
+                    background-color: #f9f9f9f9;
+                    padding: 10px;">
+                    <div class="otp">
+                        #{otp}
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-radius: 6px 6px 0 0;
+                    background-color: #f9f9f9f9;
+                    padding: 10px;">
+                    <p class="note">please use this otp to reset password</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
